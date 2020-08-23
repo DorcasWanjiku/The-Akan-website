@@ -1,23 +1,18 @@
 @import url('bootstrap.min.css');
 @import url('font-awesome.css');
 @import url('animate.css');
-
-
-/********** GENERAL STUFF **********/
-/*************************************/
-
 body {
     font-family: 'Open Sans',serif;
     padding-top: 54px;
     padding-left: 54px;
-    color: #343a40;
+    color: goldenrod;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Saira Extra Condensed',serif;
     font-weight: 700;
     text-transform: uppercase;
-    color: #343a40;
+    color:goldenrod;
 }
 
 .fs11 {
@@ -75,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 .large-red-button {
     width: 100%;
     padding: 30px;
-    border-color: blue;
+    border-color:goldenrod;
 }
 
 .nomargin {
@@ -87,15 +82,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 span.heading-name {
-    color: #bd5d38 !important;
+    color: goldenrod;
 }
 
 .ghanaian-names h4, .akan-form h5 {
-    color: #bd5d38;
+    color: goldenrod;
 }
 
 .rdio input[type="radio"]:checked + label::after {
-    background-color: #bd5d38;
+    background-color: goldenrod;
 }
 
 .text-right {
@@ -114,6 +109,7 @@ span.heading-name {
     font-size: 18px;
     text-align: center;
     line-height: 1.2em;
+    
 }
 
 .rdio {
@@ -142,15 +138,15 @@ span.heading-name {
     -webkit-border-radius: 50px;
     border-radius: 50px;
     border: 1px solid #bbb;
-    background: #fff;
+    background: goldenrod;
 }
 
 .rdio input[type="radio"]:disabled + label  {
-    color: #999;
+    color: goldenrod;
 }
 
 .rdio input[type="radio"]:disabled + label:before  {
-    background-color: #eee;
+    background-color:black;
 }
 
 .rdio input[type="radio"]:checked + label::after  {
@@ -162,22 +158,22 @@ span.heading-name {
     font-size: 11px;
     width: 10px;
     height: 10px;
-    background-color: #bd5d38;
+    background-color:gold;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
 }
 
 .rdio-default input[type="radio"]:checked + label:before {
-    border-color: #bd5d38;
+    border-color: goldenrod;
 }
 
 .rdio-primary input[type="radio"]:checked + label:before {
-    border-color: #428BCA;
+    border-color: goldenrod;
 }
 
 .rdio-primary input[type="radio"]:checked + label::after {
-    background-color: #428BCA;
+    background-color: goldenrod;
 }
 
 .rdio-warning input[type="radio"]:checked + label:before {
@@ -189,23 +185,23 @@ span.heading-name {
 }
 
 .rdio-success input[type="radio"]:checked + label:before {
-    border-color: #1CAF9A;
+    border-color: whitesmoke;
 }
 
 .rdio-success input[type="radio"]:checked + label::after {
-    background-color: #1CAF9A;
+    background-color: whitesmoke;
 }
 
 .rdio-danger input[type="radio"]:checked + label:before {
-    border-color: #D9534F;
+    border-color: goldenrod;
 }
 
 .rdio-danger input[type="radio"]:checked + label::after {
-    background-color: #D9534F;
+    background-color: goldenrod;
 }
 
 p.output span {
-    color: #bd5d38;
+    color: goldenrod;
     font-size: 50px;
 }
 

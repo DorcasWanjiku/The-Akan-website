@@ -5,13 +5,7 @@
 
 	if ( typeof module === "object" && typeof module.exports === "object" ) {
 
-		// For CommonJS and CommonJS-like environments where a proper `window`
-		// is present, execute the factory and get jQuery.
-		// For environments that do not have a `window` with a `document`
-		// (such as Node.js), expose a factory as module.exports.
-		// This accentuates the need for the creation of a real `window`.
-		// e.g. var jQuery = require("jquery")(window);
-		// See ticket #14549 for more info.
+		
 		module.exports = global.document ?
 			factory( global, true ) :
 			function( w ) {
@@ -8793,15 +8787,15 @@ function addToPrefiltersOrTransports( structure ) {
 
 		if ( isFunction( func ) ) {
 
-			// For each dataType in the dataTypeExpression
+			
 			while ( ( dataType = dataTypes[ i++ ] ) ) {
 
-				// Prepend if requested
+				
 				if ( dataType[ 0 ] === "+" ) {
 					dataType = dataType.slice( 1 ) || "*";
 					( structure[ dataType ] = structure[ dataType ] || [] ).unshift( func );
 
-				// Otherwise append
+				
 				} else {
 					( structure[ dataType ] = structure[ dataType ] || [] ).push( func );
 				}
@@ -8810,7 +8804,7 @@ function addToPrefiltersOrTransports( structure ) {
 	};
 }
 
-// Base inspection function for prefilters and transports
+
 function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {
 
 	var inspected = {},
@@ -10490,7 +10484,7 @@ jQuery.proxy = function( fn, context ) {
 		return fn.apply( context || this, args.concat( slice.call( arguments ) ) );
 	};
 
-	// Set the guid of unique handler to the same of original handler, so it can be removed
+	
 	proxy.guid = fn.guid = fn.guid || jQuery.guid++;
 
 	return proxy;
@@ -10515,33 +10509,17 @@ jQuery.now = Date.now;
 
 jQuery.isNumeric = function( obj ) {
 
-	// As of jQuery 3.0, isNumeric is limited to
-	// strings and numbers (primitives or objects)
-	// that can be coerced to finite numbers (gh-2662)
+	
 	var type = jQuery.type( obj );
 	return ( type === "number" || type === "string" ) &&
 
-		// parseFloat NaNs numeric-cast false positives ("")
-		// ...but misinterprets leading-number strings, particularly hex literals ("0x...")
-		// subtraction forces infinities to NaN
+		
 		!isNaN( obj - parseFloat( obj ) );
 };
 
 
 
 
-// Register as a named AMD module, since jQuery can be concatenated with other
-// files that may use define, but not via a proper concatenation script that
-// understands anonymous AMD modules. A named AMD is safest and most robust
-// way to register. Lowercase jquery is used because AMD module names are
-// derived from file names, and jQuery is normally delivered in a lowercase
-// file name. Do this after creating the global so that if an AMD module wants
-// to call noConflict to hide this version of jQuery, it will work.
-
-// Note that for maximum portability, libraries that are not jQuery should
-// declare themselves as anonymous modules, and avoid setting a global if an
-// AMD loader is present. jQuery is a special case. For more information, see
-// https://github.com/jrburke/requirejs/wiki/Updating-existing-libraries#wiki-anon
 
 if ( typeof define === "function" && define.amd ) {
 	define( "jquery", [], function() {
@@ -10554,10 +10532,10 @@ if ( typeof define === "function" && define.amd ) {
 
 var
 
-	// Map over jQuery in case of overwrite
+	
 	_jQuery = window.jQuery,
 
-	// Map over the $ in case of overwrite
+	
 	_$ = window.$;
 
 jQuery.noConflict = function( deep ) {
@@ -10572,9 +10550,7 @@ jQuery.noConflict = function( deep ) {
 	return jQuery;
 };
 
-// Expose jQuery and $ identifiers, even in AMD
-// (#7102#comment:10, https://github.com/jquery/jquery/pull/557)
-// and CommonJS for browser emulators (#13566)
+
 if ( !noGlobal ) {
 	window.jQuery = window.$ = jQuery;
 }

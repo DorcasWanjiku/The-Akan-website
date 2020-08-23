@@ -1,37 +1,3 @@
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-section{
-    width: 100%;
-    height: 240%;
-    height: 95vh;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    background-color: whitesmoke;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
-    padding: 0px 5%;
-}
-nav ul{
-    display: flex;
-}
-nav ul li a{
-    margin: 30px;
-    font-family: myriad pro regular;
-    color:black;
-    font-size: 15px;
-    font-weight: 700;
-}
 @import url('bootstrap.min.css');
 @import url('font-awesome.css');
 @import url('animate.css');
@@ -40,14 +6,15 @@ body {
     font-family: 'Open Sans',serif;
     padding-top: 54px;
     padding-left: 54px;
-    color: #343a40;
+    color: black;
+    background-color:grey;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Saira Extra Condensed',serif;
     font-weight: 700;
     text-transform: uppercase;
-    color: #343a40;
+    color:goldenrod;
 }
 
 .fs11 {
@@ -105,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 .large-red-button {
     width: 100%;
     padding: 30px;
-    border-color: blue;
+    border-color:goldenrod;
 }
 
 .nomargin {
@@ -117,15 +84,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 span.heading-name {
-    color: #bd5d38 !important;
+    color: goldenrod !important;
 }
 
 .ghanaian-names h4, .akan-form h5 {
-    color: #bd5d38;
+    color: goldenrod;
 }
 
 .rdio input[type="radio"]:checked + label::after {
-    background-color: #bd5d38;
+    background-color: goldenrod;
 }
 
 .text-right {
@@ -140,8 +107,8 @@ span.heading-name {
     font-family: 'Saira Extra Condensed',serif;
     font-weight: 700;
     text-transform: uppercase;
-    color: #343a40;
-    font-size: 18px;
+    color: goldenrod;
+    font-size: 50px;
     text-align: center;
     line-height: 1.2em;
 }
@@ -172,7 +139,7 @@ span.heading-name {
     -webkit-border-radius: 50px;
     border-radius: 50px;
     border: 1px solid #bbb;
-    background: #fff;
+    background:black;
 }
 
 .rdio input[type="radio"]:disabled + label  {
@@ -180,7 +147,7 @@ span.heading-name {
 }
 
 .rdio input[type="radio"]:disabled + label:before  {
-    background-color: #eee;
+    background-color:black;
 }
 
 .rdio input[type="radio"]:checked + label::after  {
@@ -192,26 +159,26 @@ span.heading-name {
     font-size: 11px;
     width: 10px;
     height: 10px;
-    background-color: #bd5d38;
+    background-color: goldenrod;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
 }
 
 .rdio-default input[type="radio"]:checked + label:before {
-    border-color: #bd5d38;
+    border-color: goldenrod;
 }
 
 .rdio-primary input[type="radio"]:checked + label:before {
-    border-color: #428BCA;
+    border-color: goldenrod;
 }
 
 .rdio-primary input[type="radio"]:checked + label::after {
-    background-color: #428BCA;
+    background-color: goldenrod;
 }
 
 .rdio-warning input[type="radio"]:checked + label:before {
-    border-color: #F0AD4E;
+    border-color: goldenrod;
 }
 
 .rdio-warning input[type="radio"]:checked + label::after {
@@ -219,24 +186,29 @@ span.heading-name {
 }
 
 .rdio-success input[type="radio"]:checked + label:before {
-    border-color: #1CAF9A;
+    border-color: goldenrod;
 }
 
 .rdio-success input[type="radio"]:checked + label::after {
-    background-color: #1CAF9A;
+    background-color: goldenrod;
 }
 
 .rdio-danger input[type="radio"]:checked + label:before {
-    border-color: #D9534F;
+    border-color:goldenrod;
 }
 
 .rdio-danger input[type="radio"]:checked + label::after {
-    background-color: #D9534F;
+    background-color:goldenrod;
 }
 
 p.output span {
-    color: #bd5d38;
+    color: goldenrod;
     font-size: 50px;
+}
+.jumbotron{
+  margin: 40px;
+  margin-bottom: 80px;
+  background-color:whitesmoke;
 }
 
 .footer {
@@ -244,7 +216,7 @@ p.output span {
     bottom: 0;
     width: 90%;
     text-align: center;
-    background-color: #ffffff;
+    background-color:white;
     margin-top: 50px;
 }
 
